@@ -11,7 +11,6 @@ export class AppComponent {
 
   presentSelectedTab = 'recipe';
   onTabSelected(selectedTab:string){
-    console.log(selectedTab);
     this.presentSelectedTab = selectedTab;
 
   }

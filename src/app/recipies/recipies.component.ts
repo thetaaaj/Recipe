@@ -17,6 +17,5 @@ export class RecipiesComponent implements OnInit {
 
   onRecipeSelected(recipe: Recipe){
     this.selectedRecipe = recipe;
-    console.log("Recipe Received in parent component : ", this.selectedRecipe);
   }
 }
