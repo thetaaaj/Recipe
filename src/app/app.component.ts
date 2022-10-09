@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   title = 'recipebook';
+
+  presentSelectedTab = 'recipe';
+  onTabSelected(selectedTab:string){
+    console.log(selectedTab);
+    this.presentSelectedTab = selectedTab;
+
+  }
+
+
 }
