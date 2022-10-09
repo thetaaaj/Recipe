@@ -1,41 +1,41 @@
-<div class="row">
-  <div class="col-xs-12">
-    <img src="" alt="">
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-12">
-    <h2>Recipe Name</h2>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-12">
-    <div class="btn-group">
-      <button 
-        type="button" 
-        class="btn btn-primary dropdown-toggle">
-        Manage Recipe
-        <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu">
-        <li><a href="">To Shopping List</a></li>
-        <li><a href="">Edit Recipe</a></li>
-        <li><a href="">Delete Recipe</a></li>
-      </ul>
+  <div class="row">
+    <div class="col-xs-12">
+      <img  class="img-responsive" style="max-height: 300px;" [src]="recipeDetail.imagePath" alt="">
     </div>
   </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-12">
-    <p>Description</p>
+  
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>{{recipeDetail.name}}</h2>
+    </div>
   </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-12">
-    <p>Ingredients</p>
+  
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="btn-group" appDropdown>
+        <button 
+          type="button" 
+          class="btn btn-primary dropdown-toggle">
+          Manage Recipe
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="">To Shopping List</a></li>
+          <li><a href="">Edit Recipe</a></li>
+          <li><a href="">Delete Recipe</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
+  
+  <div class="row">
+    <div class="col-xs-12">
+      <p>{{recipeDetail.description}}</p>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-xs-12">
+      <p>Ingredients</p>
+    </div>
+  </div>
