@@ -7,15 +7,12 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @Output() recipeClicked = new EventEmitter();
+
   
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onButtonClick(btnType:string){
-    this.recipeClicked.emit(btnType);
-  }
 
 }

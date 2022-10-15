@@ -1,9 +1,8 @@
-<app-header (recipeClicked)="onTabSelected($event)"></app-header>
+<app-header></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-recipies *ngIf="presentSelectedTab=='recipe'"></app-recipies>
-      <app-shopping-list *ngIf="presentSelectedTab=='shopping'"></app-shopping-list>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
