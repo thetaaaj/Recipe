@@ -9,7 +9,6 @@ import { Recipe } from './recipe.model';
 export class RecipeService {
 
   constructor(private shoppingL : ShoppingListService){}
-  recipeSelected = new EventEmitter<Recipe>();
 
   recipes: Recipe[] = [
     {
@@ -42,6 +41,6 @@ export class RecipeService {
   }
 
   addIngredientToShoppingList(ingredient:Ingredient[]){
-    this.shoppingL.addIngredients(ingredient)
+    this.shoppingL.addIngredients(ingredient);
   }
 }
